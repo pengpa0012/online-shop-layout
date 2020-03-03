@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Century Gothic';
+}
+
+.nav-burger{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.nav-burger .line{
+    width: 50px;
+    height: 3px;
+    background: #000;
+    margin: 10px 0px;
+}
+
+.container{
+    height: 100vh;
+    background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/luis-quintero-3qqiMT2LdR8-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container header{
+    height: 70px;
+    max-height: 10vh;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.container header .nav-list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container header .nav-list .nav-links{
+    display: flex;
+}
+
+.container header .nav-list .nav-links a{
+    text-decoration: none;
+    color: #161616;
+}
+
+.container header .nav-list .nav-links li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-bottom: solid transparent 2px;
+}    
+
+.container header .nav-list .nav-links li:hover{
+    color: #161616;
+    border-bottom: solid #000 2px;
+}
+
+.container header .nav-list .nav-links li.active{
+    border-bottom: solid #000 2px;
+}
+
+.container main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    color: #f0f0f0;
+}
+
+.container main h1{
+    font-size: 50px;
+    border-bottom: solid #f0f0f0 4px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.container main button{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #1883db;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+}
+
+.container main button:hover{
+    background: #1467ac;
+}

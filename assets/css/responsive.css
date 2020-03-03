@@ -1,0 +1,45 @@
+@media (max-width: 800px){
+    .nav-burger{
+        display: block;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .nav-links{
+        flex-direction: column;
+        height: 100%;
+        background: #e2e2e2;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 60vw;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .nav-links.toggle{
+        right: 0;
+    }
+
+    .nav-links a{
+        margin: 20px 0px;
+    }
+
+    .container main h1, .container .info h3, .container .about-content h3{
+        font-size: 30px;
+    }   
+
+    .container .about-content p{
+        font-size: 20px;
+    }
+
+    main .product-cover{
+        gap: 0;
+        padding: 0;
+    }
+
+    footer .content{
+      flex-direction: column;
+    }
+}

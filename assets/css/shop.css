@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Century Gothic';
+}
+
+.nav-burger{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.nav-burger .line{
+    width: 50px;
+    height: 3px;
+    background: #000;
+    margin: 10px 0px;
+}
+
+.container{
+    min-height: 100vh;
+    background: #e6e6e6;
+}
+
+.container header{
+    height: 70px;
+    max-height: 10vh;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.container header .nav-list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container header .nav-list .nav-links{
+    display: flex;
+}
+
+.container header .nav-list .nav-links a{
+    text-decoration: none;
+    color: #161616;
+}
+
+.container header .nav-list .nav-links li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-bottom: solid transparent 2px;
+}    
+
+.container header .nav-list .nav-links li:hover{
+    color: #161616;
+    border-bottom: solid #000 2px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+main .product-cover{  
+    display: grid;
+    margin: 0px auto 50px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+main .product-cover .product{
+    position: relative;
+}
+
+main .product-cover .product img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+main .product-cover .product button{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    background: #1883db;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    opacity: 0;
+}
+
+main .product-cover .product:hover button{
+    top: 50%;
+    opacity: 1;
+    pointer-events: all;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background: #1a1a1a;
+    color: #f0f0f0;
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+footer .content ul li{
+    font-size: 18px;
+    list-style: none;
+    margin: 15px 0;
+    border-bottom: solid transparent 1px;
+}
+
+footer .content ul li:hover{
+    cursor: pointer;
+    border-bottom: solid #f0f0f0 1px;
+}

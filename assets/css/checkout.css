@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Century Gothic';
+    height: 100vh;
+    background: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .message{
+    height: 50vh;
+    width: 100%;
+    background: #eeeeee;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .message h3{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.container .message p{
+    font-size: 20px;
+}

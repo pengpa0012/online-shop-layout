@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Century Gothic';
+    background: #e6e6e6;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.container .product img{
+    width: 50%;
+}
+
+.container .product .description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.container .product .description h3{
+    font-size: 30px;
+}
+
+.container .product .description p{
+    font-size: 20px;
+}
+
+.container .product .description .order span{
+    font-size: 25px;
+}
+
+.container .product .description .order input[type="number"]{
+    width: 80px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+
+.container .product .description .order button{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #1883db;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.container .product .description .order button:hover{
+    background: #1467ac;
+}
+
+@media (max-width: 800px){
+    .container .product{
+        flex-direction: column;
+    }
+    
+    .container .product .description{
+        padding: 10px 20px;
+        height: 100%;
+    }
+}

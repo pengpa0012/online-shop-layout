@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Century Gothic';
+    height: 100vh;
+    background: #e6e6e6;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+    padding: 20px 10px;
+    height: 500px;
+    width: 750px;
+    max-width: 95%;
+    margin: auto;
+    background: #fff;
+   
+}
+
+.container form .input-field{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 30px;
+
+}
+
+.container form .input-field .name, .email, .Address, .payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px;
+
+}
+
+.container form .input-field .name p, .email p, .Address p, .payment p{
+    font-size: 20px;
+}
+
+.container form .input-field input[type="name"], input[type="email"], textarea, select{
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   outline: none;
+   width: 60%;
+   font-size: 20px;
+   margin: 0 10px;
+   resize: none;
+   padding: 2px 5px;
+}
+
+.container form .input-field input[type="name"], input[type="email"], select{
+    border-bottom-color: #111111;
+}
+
+.container form .input-field input[type="name"]:focus, input[type="email"]:focus, select:focus{
+    border-bottom-color: #1883db;
+}
+
+.container form .input-field a{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #1883db;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container form .input-field a:hover{
+    background: #1467ac;
+}
