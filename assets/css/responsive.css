@@ -9,7 +9,7 @@
         flex-direction: column;
         height: 100%;
         background: #e2e2e2;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 100%;
         width: 60vw;

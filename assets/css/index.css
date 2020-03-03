@@ -24,7 +24,7 @@ body{
 
 .container{
     height: 100vh;
-    background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/luis-quintero-3qqiMT2LdR8-unsplash.jpg') no-repeat;
+    background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/front-bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -38,12 +38,9 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-}
-
-.container header .nav-list{
-    display: flex;
-    align-items: center;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .container header .nav-list .nav-links{
@@ -80,7 +77,7 @@ body{
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin: 70px auto 0px auto;
     color: #f0f0f0;
 }
 
