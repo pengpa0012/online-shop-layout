@@ -24,7 +24,7 @@ body{
 
 .container{
     height: 100vh;
-    background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/front-bg.jpg') no-repeat;
+    background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/front-bg.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
 }
